@@ -1,0 +1,76 @@
+/*---------------- about area ----------------*/
+
+.about-area {
+  .right-side {
+    display: flex;
+    justify-content: space-between;
+    @media #{$tab_device} {
+      flex-direction: column;
+    }
+    @media #{$large_mobile} {
+      flex-direction: column;
+    }
+    @media #{$small_mobile} {
+      flex-direction: column;
+    }
+    .pizza_img {
+      width: 550px;
+      height: 550px;
+      @media #{$laptop_m_four} {
+        width: 380px;
+        height: 380px;
+      }
+      @media #{$small_mobile} {
+        width: 300px;
+        height: 300px;
+      }
+    }
+    .today_lists {
+      @media #{$tab_device} {
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      @media #{$large_mobile} {
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+        flex-wrap: wrap;
+      }
+
+      @media #{$small_mobile} {
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+        flex-wrap: wrap;
+      }
+      .item_list {
+        display: flex;
+        gap: 12px;
+        h3 {
+          @media #{$laptop_m_four} {
+            font-size: $font-size-45 !important;
+            line-height: 45px !important;
+          }
+          @media #{$large_mobile} {
+            font-size: $font-size-35 !important;
+            line-height: 35px !important;
+          }
+        }
+      }
+    }
+  }
+  .section-heading {
+    .section__title {
+      @media #{$laptop_m_four} {
+        font-size: $font-size-45 !important;
+        line-height: 45px !important;
+      }
+    }
+  }
+}

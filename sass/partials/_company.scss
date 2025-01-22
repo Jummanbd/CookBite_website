@@ -1,0 +1,36 @@
+.company_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media #{$tab_device} {
+    flex-wrap: wrap;
+  }
+  @media #{$large_mobile} {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media #{$small_mobile} {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .company_logo_item {
+    margin: 0 30px;
+    @media #{$tab_device} {
+      margin-top: 15px;
+    }
+    @media #{$device-480px} {
+      margin: 15px;
+    }
+    img {
+      width: 130px;
+      @media #{$laptop_m_four} {
+        width: 100px;
+      }
+    }
+  }
+  svg {
+    fill: #8e8e91;
+  }
+}

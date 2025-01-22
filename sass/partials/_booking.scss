@@ -1,0 +1,56 @@
+// booking
+
+.booking-table {
+  @media #{$tab_device} {
+    margin-top: 30px !important;
+  }
+  @media #{$large_mobile} {
+    margin-top: 30px !important;
+  }
+
+  @media #{$small_mobile} {
+    margin-top: 30px !important;
+  }
+  .booking-box {
+    position: relative;
+    background: $theme-color-5;
+    height: 100% !important;
+    @include border-radius(20px);
+    .booking_wrapper {
+      padding: 50px 25px;
+    }
+    .contaces-number {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      .cont_icon {
+        font-size: $font-size-42;
+        color: $color-9;
+        .phone_number {
+          font-size: $font-size-20;
+        }
+      }
+    }
+  }
+  .left-book {
+    position: relative;
+    overflow: hidden;
+    &::before {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      right: 0px;
+      width: 140px;
+      height: 175px;
+      background-size: cover;
+      background-position: center;
+      pointer-events: none;
+      background-image: url("../../images/Frame.png");
+      z-index: 1;
+      overflow: hidden;
+    }
+  }
+  .right-book {
+    padding: 50px 25px;
+  }
+}

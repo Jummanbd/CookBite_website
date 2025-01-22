@@ -1,0 +1,136 @@
+/*========= food area ========*/
+.food-area {
+  position: relative;
+  &.pb-350px {
+    @media #{$large_mobile} {
+      padding-bottom: 180px !important;
+    }
+  }
+
+  .food-item {
+    padding: 25px;
+    @include border-radius(20px);
+    color: $theme-color-5;
+    width: 100%;
+    height: 100%;
+    @media #{$tab_device} {
+      margin-top: 15px;
+    }
+    .food-img {
+      @media #{$small_mobile} {
+        width: 100%;
+      }
+
+      .best__burger_img {
+        @media #{$laptop_m_three} {
+          width: 100%;
+        }
+        @media #{$laptop_m_four} {
+          width: 100%;
+        }
+      }
+    }
+    .food-content {
+      @media #{$device-320px} {
+        padding-left: 10px;
+      }
+    }
+  }
+  .food-right-side {
+    position: relative;
+    overflow: hidden;
+    .food-img {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      .food-img-side {
+        position: absolute;
+        top: -24px;
+        left: 0;
+      }
+    }
+  }
+
+  .best-burger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media #{$device-320px} {
+      flex-direction: column;
+    }
+  }
+  .taste_meet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.food-vider-area {
+  position: relative;
+  .video-img {
+    width: 100%;
+  }
+}
+.food-video-wrapper {
+  width: 100%;
+  position: relative;
+  margin-top: 80px;
+  margin-bottom: -150px;
+  border-radius: 50px;
+  @media #{$large_mobile} {
+    font-size: $font-size-35 !important;
+    line-height: 35px !important;
+  }
+
+  @media #{$small_mobile} {
+    font-size: $font-size-35 !important;
+    line-height: 35px !important;
+  }
+
+  @media #{$device-375px} {
+    margin-bottom: -100px !important;
+  }
+  .paly-icon-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .paly-icon {
+      font-size: $font-size-35;
+      cursor: pointer;
+      background: none !important;
+      border: none !important;
+      @media #{$small_mobile} {
+        font-size: $font-size-24;
+      }
+      .la-play {
+        @include border-radius(50%);
+        background: $color-8;
+        position: relative;
+        z-index: 10;
+        padding: 14px;
+        color: $theme-color-5;
+      }
+      &::before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        content: "";
+        opacity: 0.4;
+        height: 8rem;
+        width: 8rem;
+        margin-left: -4rem;
+        margin-top: -4rem;
+        background: $theme-color-5;
+        @include border-radius(50%);
+        @media #{$small_mobile} {
+          height: 6rem;
+          width: 6rem;
+          margin-left: -3rem;
+          margin-top: -3rem;
+        }
+      }
+    }
+  }
+}
